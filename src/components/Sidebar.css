@@ -1,0 +1,12 @@
+@media (min-width: 960px) {
+  .sidebarHeader {
+    position: sticky;
+    left: 0;
+    top: 0;
+    width: auto;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-bottom: none;
+    border-right: 1px solid hsla(0, 0%, 100%, 0.25);
+  }
+}
