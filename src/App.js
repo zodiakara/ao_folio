@@ -3,11 +3,11 @@ import "./App.css";
 import MyNavbar from "./components/MyNav";
 import Sidebar from "./components/Sidebar";
 import About from "./components/about/About";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
     <>
-      <div className="App">MY folio website</div>
       <MyNavbar />
       <Box
         sx={{
@@ -24,6 +24,7 @@ function App() {
           <About />
         </Grid>
       </Box>
+      <Footer />
     </>
   );
 }

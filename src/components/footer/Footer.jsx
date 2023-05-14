@@ -1,0 +1,30 @@
+import { Box } from "@mui/material";
+import FooterButton from "./FooterButton";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import Copyright from "./Copyright";
+
+const Footer = () => {
+  return (
+    <Box sx={{ display: "flex", justifyContent: "space-between" }}>
+      <Box>
+        <FooterButton
+          icon={<GitHubIcon />}
+          address="https://github.com/zodiakara"
+        />
+        <FooterButton
+          icon={<LinkedInIcon />}
+          address={"https://www.linkedin.com/in/agata-ormi%C5%84ska-b79271174/"}
+        />
+        <FooterButton
+          icon={<InstagramIcon />}
+          address="https://www.instagram.com/agejsha/"
+        />
+      </Box>
+      <Copyright />
+    </Box>
+  );
+};
+
+export default Footer;
