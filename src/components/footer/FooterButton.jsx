@@ -3,7 +3,9 @@ import { IconButton, Link } from "@mui/material";
 function FooterButton({ address, icon }) {
   return (
     <Link href={address}>
-      <IconButton>{icon}</IconButton>
+      <IconButton size="large" color="default">
+        {icon}
+      </IconButton>
     </Link>
   );
 }
