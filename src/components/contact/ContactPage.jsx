@@ -4,12 +4,12 @@ import ContactForm from "./ContactForm";
 function ContactPage() {
   return (
     <>
-      <Box>
+      <Box className="MainContainer">
         <Typography variant="h3">liked my page? wanna collaborate?</Typography>
         <Typography variant="body2">feel free to contact me!</Typography>
-      </Box>
-      <Box>
-        <ContactForm />
+        <Box>
+          <ContactForm />
+        </Box>
       </Box>
     </>
   );
