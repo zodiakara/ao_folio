@@ -13,7 +13,13 @@ const Projects = () => {
     <Box className="MainContainer">
       <Typography variant="h2">My Projects</Typography>
       <Box>
-        <Card sx={{ maxWidth: 345 }}>
+        <Card
+          sx={{
+            maxWidth: 345,
+            border: "none",
+            boxShadow: "none",
+          }}
+        >
           <CardMedia
             component="img"
             height="140"
@@ -24,10 +30,13 @@ const Projects = () => {
             <Typography variant="h5">title</Typography>
           </CardContent>
           <CardActions>
-            <Button size="small">Share</Button>
-            <Button size="small">Learn More</Button>
+            <Button size="small">see</Button>
+            <Button size="small">repo</Button>
           </CardActions>
         </Card>
+      </Box>
+      <Box>
+        <Typography>check out my other projects </Typography>
       </Box>
     </Box>
   );
