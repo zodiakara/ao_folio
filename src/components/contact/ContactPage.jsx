@@ -7,9 +7,9 @@ function ContactPage() {
       <Box className="MainContainer">
         <Typography variant="h3">liked my page? wanna collaborate?</Typography>
         <Typography variant="body2">feel free to contact me!</Typography>
-        <Box>
+        {/* <Box>
           <ContactForm />
-        </Box>
+        </Box> */}
       </Box>
     </>
   );

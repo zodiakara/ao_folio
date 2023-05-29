@@ -1,9 +1,9 @@
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 
 function ContactForm() {
   return (
     <>
-      <Box>form goes here</Box>;
+      <Box>form goes here</Box>
     </>
   );
 }
