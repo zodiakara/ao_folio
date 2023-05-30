@@ -8,13 +8,21 @@ import {
   CardMedia,
   Icon,
   IconButton,
+  Link,
   SvgIcon,
   Typography,
 } from "@mui/material";
 
 const Projects = () => {
   return (
-    <Box className="MainContainer">
+    <Box
+      className="MainContainer"
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-around",
+      }}
+    >
       <Box sx={{ marginBottom: 2 }}>
         <Typography variant="h2">My Projects</Typography>
       </Box>
@@ -45,7 +53,9 @@ const Projects = () => {
         <GitHubIcon />
 
         <Typography sx={{ mx: 1, fontFamily: "Lato" }}>
-          check out my other works
+          <Link href="https://github.com/zodiakara" sx={{ color: "black" }}>
+            check out my other works
+          </Link>
         </Typography>
 
         <GitHubIcon />

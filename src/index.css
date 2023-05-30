@@ -24,3 +24,16 @@ a {
   margin: 0;
   scroll-behavior: smooth;
 }
+.skill-item {
+  height: 90px;
+  width: 90px;
+  background-color: rgb(251, 204, 211);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.skill-item img {
+  max-height: 50px;
+  width: auto;
+}
