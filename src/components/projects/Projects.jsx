@@ -6,10 +6,7 @@ import {
   CardActions,
   CardContent,
   CardMedia,
-  Icon,
-  IconButton,
   Link,
-  SvgIcon,
   Typography,
 } from "@mui/material";
 
@@ -52,7 +49,7 @@ const Projects = () => {
       <Box sx={{ display: "flex", "justify-content": "center", marginY: 2 }}>
         <GitHubIcon />
 
-        <Typography sx={{ mx: 1, fontFamily: "Lato" }}>
+        <Typography className="projects-gh" sx={{ mx: 1, fontFamily: "Lato" }}>
           <Link href="https://github.com/zodiakara" sx={{ color: "black" }}>
             check out my other works
           </Link>

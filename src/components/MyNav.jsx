@@ -11,7 +11,7 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 
-const pages = ["About", "Projects", "Contact"];
+const pages = ["Home", "About", "Projects", "Contact"];
 
 const MyNavbar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -35,7 +35,6 @@ const MyNavbar = () => {
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
           <Typography
             variant="h6"
             noWrap
@@ -44,14 +43,13 @@ const MyNavbar = () => {
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
-              fontFamily: "monospace",
+              fontFamily: "Lato0",
               fontWeight: 700,
-              letterSpacing: ".3rem",
               color: "black",
               textDecoration: "none",
             }}
           >
-            LOGO
+            AO
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -91,7 +89,7 @@ const MyNavbar = () => {
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
+
           <Typography
             variant="h5"
             noWrap
@@ -113,6 +111,7 @@ const MyNavbar = () => {
           <Box
             sx={{
               flexGrow: 1,
+              justifyContent: "center",
               display: { xs: "none", md: "flex" },
             }}
           >
@@ -120,7 +119,7 @@ const MyNavbar = () => {
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "black", display: "block" }}
+                sx={{ my: 2, mx: 5, color: "black", display: "block" }}
                 href={`${"#" + page}`}
               >
                 {page}
