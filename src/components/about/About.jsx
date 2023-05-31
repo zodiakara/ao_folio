@@ -1,5 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import { stack } from "../../assets/icons/myStack.js";
+import Circle from "./Circle.jsx";
 
 function About() {
   return (
@@ -11,22 +12,37 @@ function About() {
         justifyContent: "space-around",
       }}
     >
-      <Box>
-        <h1>about me</h1>
-        <Typography>
-          I am really passionate about coding, so I might as well get payed to
-          do so.{" "}
-        </Typography>
+      <Box
+        sx={{
+          display: "flex",
+
+          justifyContent: "space-around",
+        }}
+      >
+        <Box>
+          <Typography variant="h3" sx={{ fontFamily: "Lato" }}>
+            {" "}
+            about{" "}
+          </Typography>
+          <Typography sx={{ fontFamily: "Lato" }}>
+            I am really passionate about coding, so I might as well get payed to
+            do so.{" "}
+          </Typography>
+        </Box>
+
+        <Box sx={{ display: { xs: "none", md: "flex" } }}>
+          <Circle />
+        </Box>
       </Box>
-      <Box>
+      <Box sx={{ display: { xs: "flex", md: "none" } }}>
         <Typography
-          variant="h3"
+          variant="h4"
           sx={{ px: 1, fontFamily: "Lato", textAlign: "center" }}
         >
           Skills
         </Typography>
 
-        <Box sx={{ display: "flex" }}>
+        <Box>
           {stack.map((icon) => (
             <>
               <Box
