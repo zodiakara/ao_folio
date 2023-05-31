@@ -14,10 +14,34 @@ a {
 
 .MainContainer {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+}
+.skill-item {
+  height: 90px;
+  width: 90px;
+  background-color: rgb(251, 204, 211);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.skill-item img {
+  max-height: 50px;
+  width: auto;
+}
+.projects-gh:hover {
+  /* Entire text flipped around */
+
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
 }

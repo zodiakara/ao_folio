@@ -1,17 +1,54 @@
 import { Box, Typography } from "@mui/material";
+import { stack } from "../../assets/icons/myStack.js";
 
 function About() {
   return (
-    <Box className="MainContainer">
-      <h1>about me</h1>
+    <Box
+      className="MainContainer"
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-around",
+      }}
+    >
       <Box>
+        <h1>about me</h1>
         <Typography>
           I am really passionate about coding, so I might as well get payed to
           do so.{" "}
         </Typography>
       </Box>
       <Box>
-        <h2>Skills</h2>
+        <Typography
+          variant="h3"
+          sx={{ px: 1, fontFamily: "Lato", textAlign: "center" }}
+        >
+          Skills
+        </Typography>
+
+        <Box sx={{ display: "flex" }}>
+          {stack.map((icon) => (
+            <>
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  m: 2,
+                  "&:hover": { scale: "1.1" },
+                }}
+              >
+                <Box className="skill-item">
+                  <img src={icon.icon} alt={icon.name} />
+                </Box>
+                <Typography sx={{ px: 1, fontFamily: "Lato" }}>
+                  {icon.name}
+                </Typography>
+              </Box>
+            </>
+          ))}
+        </Box>
       </Box>
     </Box>
   );

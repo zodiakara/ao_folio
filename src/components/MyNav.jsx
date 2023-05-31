@@ -11,7 +11,7 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 
-const pages = ["About", "Projects", "Contact"];
+const pages = ["Home", "About", "Projects", "Contact"];
 
 const MyNavbar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -25,26 +25,31 @@ const MyNavbar = () => {
   };
 
   return (
-    <AppBar position="sticky" sx={{ backgroundColor: "black" }}>
+    <AppBar
+      position="sticky"
+      sx={{
+        backgroundColor: "white",
+        boxShadow: "none",
+        borderBottom: "0.1px black solid",
+      }}
+    >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
           <Typography
             variant="h6"
             noWrap
             component="a"
-            href="/"
+            href="#welcome"
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
-              fontFamily: "monospace",
+              fontFamily: "Lato0",
               fontWeight: 700,
-              letterSpacing: ".3rem",
               color: "black",
               textDecoration: "none",
             }}
           >
-            LOGO
+            AO
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -54,7 +59,7 @@ const MyNavbar = () => {
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
-              color="inherit"
+              color="black"
             >
               <MenuIcon />
             </IconButton>
@@ -75,6 +80,7 @@ const MyNavbar = () => {
               sx={{
                 display: { xs: "block", md: "none" },
               }}
+              color="black"
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
@@ -83,7 +89,7 @@ const MyNavbar = () => {
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
+
           <Typography
             variant="h5"
             noWrap
@@ -96,18 +102,25 @@ const MyNavbar = () => {
               fontFamily: "monospace",
               fontWeight: 700,
               letterSpacing: ".3rem",
-              color: "inherit",
+              color: "black",
               textDecoration: "none",
             }}
           >
             LOGO
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+              justifyContent: "center",
+              display: { xs: "none", md: "flex" },
+            }}
+          >
             {pages.map((page) => (
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
+                sx={{ my: 2, mx: 5, color: "black", display: "block" }}
+                href={`${"#" + page}`}
               >
                 {page}
               </Button>
