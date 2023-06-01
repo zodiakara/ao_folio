@@ -1,4 +1,4 @@
-import { Box, Stack, TextField } from "@mui/material";
+import { Box, Button, Stack, TextField } from "@mui/material";
 
 function ContactForm() {
   const handleSubmit = (e) => {
@@ -7,7 +7,7 @@ function ContactForm() {
   return (
     <>
       <Box component="form" onSubmit={(e) => handleSubmit(e)}>
-        <Stack direction={"column"} sx={{ minWidth: "300px" }}>
+        <Stack direction={"column"} sx={{ minWidth: "350px" }}>
           <TextField id="form-name" label="name" variant="standard" />
           <TextField id="form-email" label="email" variant="standard" />
           <TextField
@@ -17,6 +17,9 @@ function ContactForm() {
             rows={5}
           />
         </Stack>
+        <Box sx={{ display: "flex", justifyContent: "flex-end" }}>
+          <Button onClick={handleSubmit}>Send</Button>
+        </Box>
       </Box>
     </>
   );
