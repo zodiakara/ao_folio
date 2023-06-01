@@ -8,6 +8,7 @@ const ProjectsCard = (props) => {
           border: "none",
           boxShadow: "none",
           margin: "1rem",
+          "&:hover": { cursor: "pointer" },
         }}
       >
         <CardMedia
