@@ -11,9 +11,9 @@ function ContactPage() {
           {/* <br></br>You can use the contact form or write directly to my @ */}
         </Typography>
 
-        {/* <Box>
+        <Box>
           <ContactForm />
-        </Box> */}
+        </Box>
       </Box>
     </>
   );

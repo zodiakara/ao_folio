@@ -1,8 +1,8 @@
-const myProjects = [
+export const myProjects = [
   {
     name: "swAPP",
     scope: "Frontend and Backend",
-    stackFE: "React, Redux,",
+    stackFE: "React, Redux, MUI",
     stackBE: "",
     repoFE: "link",
     repoBE: "",
@@ -13,7 +13,7 @@ const myProjects = [
   {
     name: "LinkedIn Clone",
     scope: "Frontend and Backend",
-    stackFE: "React, Redux,",
+    stackFE: "React, Redux, Bootstrap",
     stackBE: "",
     repoFE: "link",
     repoBE: "",
@@ -24,7 +24,7 @@ const myProjects = [
   {
     name: "Whatsapp Clone",
     scope: "Frontend and Backend",
-    stackFE: "React, Redux,",
+    stackFE: "React, Redux, Typescript, MUI, Bootstrap",
     stackBE: "",
     repoFE: "link",
     repoBE: "",
@@ -33,9 +33,9 @@ const myProjects = [
     description: "",
   },
   {
-    name: "Spotify Clone",
+    name: "Calculator",
     scope: "Frontend",
-    stackFE: "React, Redux, Typescript",
+    stackFE: "Javascript, CSS",
     stackBE: "",
     repoFE: "link",
     repoBE: "",

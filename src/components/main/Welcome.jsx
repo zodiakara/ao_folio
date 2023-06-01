@@ -1,16 +1,13 @@
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
 function WelcomePage() {
   return (
-    <Box
-      className="MainContainer"
-      sx={{
-        display: "flex",
-        justifyContent: "center",
-      }}
-    >
+    <Box className="MainContainer">
       <Typography> Hello, I am </Typography>
-      <Typography variant="h3"> Agata Ormińska </Typography>
+      <Typography sx={{ marginY: "0.75rem" }} variant="h3">
+        {" "}
+        Agata Ormińska{" "}
+      </Typography>
       <Typography>a full stack developer</Typography>
     </Box>
   );
