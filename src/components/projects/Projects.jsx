@@ -1,51 +1,31 @@
 import GitHubIcon from "@mui/icons-material/GitHub";
-import {
-  Box,
-  Button,
-  Card,
-  CardActions,
-  CardContent,
-  CardMedia,
-  Link,
-  Typography,
-} from "@mui/material";
+import { Box, Grid, Link, Typography } from "@mui/material";
+import { myProjects } from "../../assets/myProjects";
+import ProjectsCard from "./ProjectsCard";
 
 const Projects = () => {
   return (
-    <Box
-      className="MainContainer"
-      sx={{
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "space-around",
-      }}
-    >
-      <Box sx={{ marginBottom: 2 }}>
-        <Typography variant="h2">My Projects</Typography>
-      </Box>
-      <Box>
-        <Card
-          sx={{
-            maxWidth: 345,
-            border: "none",
-            boxShadow: "none",
-          }}
-        >
-          <CardMedia
-            component="img"
-            height="250"
-            src="https://media.cnn.com/api/v1/images/stellar/prod/201026153717-cancun-mexico.jpg?q=x_2,y_215,h_1228,w_2182,c_crop/h_720,w_1280/f_webp"
-            alt="green iguana"
-          />
-          <CardContent>
-            <Typography variant="h5">title</Typography>
-          </CardContent>
-          <CardActions>
-            <Button size="small">see</Button>
-            <Button size="small">repo</Button>
-          </CardActions>
-        </Card>
-      </Box>
+    <Box className="MainContainer" sx={{ marginX: "1rem" }}>
+      <Typography gutterBottom variant="h3">
+        projects
+      </Typography>
+      <Grid
+        container
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        {myProjects.map((project) => {
+          return (
+            <Grid item xs={12} md={6}>
+              <ProjectsCard project={project} />{" "}
+            </Grid>
+          );
+        })}
+      </Grid>
+
       <Box sx={{ display: "flex", "justify-content": "center", marginY: 2 }}>
         <GitHubIcon />
 
