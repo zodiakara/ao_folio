@@ -5,7 +5,7 @@ import { useState } from "react";
 
 const Circle = () => {
   const [toggle, setToggle] = useState(false);
-  const radius = 200; // Radius of the circle
+  const radius = 250; // Radius of the circle
   const angle = (2 * Math.PI) / stack.length; // Angle between each image
 
   return (
@@ -30,8 +30,8 @@ const Circle = () => {
             alt={skill.name}
             className="circle-image"
             style={{
-              left: `${radius * Math.cos(index * angle) + radius - 125}px`,
-              top: `${radius * Math.sin(index * angle) + radius - 125}px`,
+              left: `${radius * Math.cos(index * angle) + radius - 175}px`,
+              top: `${radius * Math.sin(index * angle) + radius - 175}px`,
             }}
           />
         ))}
