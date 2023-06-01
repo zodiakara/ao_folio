@@ -1,59 +1,58 @@
 import { Box, Button, Stack, TextField } from "@mui/material";
-import { useState } from "react";
+import { useForm, ValidationError } from "@formspree/react";
 
 function ContactForm() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [text, setText] = useState("");
+  const [state, handleSubmit] = useForm(process.env.REACT_APP_FORM_KEY);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const data = { name: name, email: email, text: text };
-    console.log(data);
-    clearTheForm();
-  };
-  const clearTheForm = () => {
-    setName("");
-    setEmail("");
-    setText("");
-  };
+  if (state.succeeded) {
+    return <p>Thank You for Your message!</p>;
+  }
+
   return (
     <>
-      <Box component="form" onSubmit={(e) => handleSubmit(e)}>
+      <form onSubmit={handleSubmit}>
         <Stack direction={"column"} sx={{ minWidth: "350px" }}>
           <TextField
-            id="form-name"
-            label="name"
-            value={name ? name : ""}
-            onChange={(e) => {
-              setName(e.target.value);
-            }}
+            id="name"
+            name="name"
+            label="Name"
+            fullWidth
+            required
             variant="standard"
           />
+          <ValidationError prefix="Name" field="name" errors={state.errors} />
           <TextField
-            id="form-email"
-            label="email"
-            value={email ? email : ""}
-            onChange={(e) => {
-              setEmail(e.target.value);
-            }}
+            id="email"
+            name="email"
+            label="Email"
+            type="email"
+            fullWidth
+            required
             variant="standard"
           />
+          <ValidationError prefix="Email" field="email" errors={state.errors} />
           <TextField
             sx={{ marginTop: "2rem" }}
-            id="form-text"
-            value={text ? text : ""}
-            onChange={(e) => {
-              setText(e.target.value);
-            }}
+            id="message"
+            name="message"
+            placeholder="type your message here"
             multiline
             rows={5}
+            fullWidth
+            required
+          />
+          <ValidationError
+            prefix="Message"
+            field="message"
+            errors={state.errors}
           />
         </Stack>
         <Box sx={{ display: "flex", justifyContent: "flex-end" }}>
-          <Button onClick={handleSubmit}>Send</Button>
+          <Button type="submit" disabled={state.submitting}>
+            Send
+          </Button>
         </Box>
-      </Box>
+      </form>
     </>
   );
 }
