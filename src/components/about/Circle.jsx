@@ -17,7 +17,7 @@ const Circle = () => {
     >
       <Typography
         className="skill-text"
-        sx={{ fontFamily: "Lato", textAlign: "center", fontWeight: "bold" }}
+        sx={{ textAlign: "center", fontWeight: "bold" }}
       >
         toggle to see <br></br>my skills stack
       </Typography>

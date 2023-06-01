@@ -1,5 +1,5 @@
 import GitHubIcon from "@mui/icons-material/GitHub";
-import { Box, Link, Typography } from "@mui/material";
+import { Box, Grid, Link, Typography } from "@mui/material";
 import { myProjects } from "../../assets/myProjects";
 import ProjectsCard from "./ProjectsCard";
 
@@ -9,10 +9,28 @@ const Projects = () => {
       <Typography gutterBottom variant="h3">
         projects
       </Typography>
-
-      {myProjects.map((project) => {
-        return <ProjectsCard project={project} />;
-      })}
+      <Grid
+        container
+        rowSpacing={2}
+        sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}
+      >
+        {myProjects.map((project) => {
+          return (
+            <Grid
+              item
+              xs={12}
+              md={6}
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <ProjectsCard project={project} />{" "}
+            </Grid>
+          );
+        })}
+      </Grid>
 
       <Box sx={{ display: "flex", "justify-content": "center", marginY: 2 }}>
         <GitHubIcon />
