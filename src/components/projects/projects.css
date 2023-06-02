@@ -9,28 +9,14 @@
   cursor: pointer;
 }
 
-/* .projectCardContainer:hover::after {
-  content: "x";
-  font-size: 3rem;
-
-  z-index: 100;
-  color: rgb(88, 88, 90);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  pointer-events: none; /* Ensure the pseudo-element doesn't interfere with button interaction */
-/* opacity: 0;
-  transition: opacity 0.3s; */
-
 .projectCardContainer:hover > .button-wrapper {
-  display: inline-flex;
+  display: block;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  opacity: 80%;
-  transition: 0.3s;
+  /* opacity: 80%;
+  transition: 0.3s; */
 }
 
 .button-wrapper {

@@ -1,6 +1,7 @@
 import { Box, Card, CardMedia, Typography } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import FooterButton from "../footer/FooterButton";
+import VisibilityIcon from "@mui/icons-material/Visibility";
+import ProjectButton from "./ProjectButton";
 import "./projects.css";
 
 const ProjectsCard = (props) => {
@@ -24,14 +25,14 @@ const ProjectsCard = (props) => {
           // sx={{ "&:hover": { cursor: "pointer", opacity: "80%" } }}
         />
         <Box className="button-wrapper">
-          <FooterButton
-            icon={<GitHubIcon />}
-            address="https://github.com/zodiakara"
+          <ProjectButton
+            icon={<VisibilityIcon />}
+            address={props.project.prodFE ? props.project.prodFE : ""}
+            sx={
+              props.project.prodFE ? { display: "flex" } : { display: "none" }
+            }
           />
-          <FooterButton
-            icon={<GitHubIcon />}
-            address="https://github.com/zodiakara"
-          />
+          <ProjectButton icon={<GitHubIcon />} address={props.project.repoFE} />
         </Box>
         <Typography
           variant="h4"
