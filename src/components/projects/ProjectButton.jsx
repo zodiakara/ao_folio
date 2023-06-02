@@ -9,7 +9,7 @@ function ProjectButton({ address, icon }) {
           color: ["#f5f5f5"],
           backgroundColor: "grey",
           marginX: "0.5rem",
-          "&:hover": { scale: 1.1, backgroundColor: "black" },
+          "&:hover": { scale: 1.1, backgroundColor: "darkgrey" },
         }}
       >
         {icon}

@@ -25,14 +25,22 @@ const ProjectsCard = (props) => {
           // sx={{ "&:hover": { cursor: "pointer", opacity: "80%" } }}
         />
         <Box className="button-wrapper">
+          {props.project.prodFE === "" ? (
+            ""
+          ) : (
+            <ProjectButton
+              icon={<VisibilityIcon />}
+              address={
+                props.project.prodFE === ""
+                  ? props.project.repoFE
+                  : props.project.prodFE
+              }
+            />
+          )}
           <ProjectButton
-            icon={<VisibilityIcon />}
-            address={props.project.prodFE ? props.project.prodFE : ""}
-            sx={
-              props.project.prodFE ? { display: "flex" } : { display: "none" }
-            }
+            icon={<GitHubIcon />}
+            address={props.project.repoFE ? props.project.repoFE : ""}
           />
-          <ProjectButton icon={<GitHubIcon />} address={props.project.repoFE} />
         </Box>
         <Typography
           variant="h4"

@@ -20,7 +20,7 @@ const Projects = () => {
         {myProjects.map((project) => {
           return (
             <Grid item xs={12} md={6}>
-              <ProjectsCard project={project} />{" "}
+              <ProjectsCard project={project} />
             </Grid>
           );
         })}
