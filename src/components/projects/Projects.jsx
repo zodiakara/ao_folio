@@ -5,7 +5,7 @@ import ProjectsCard from "./ProjectsCard";
 
 const Projects = () => {
   return (
-    <Box className="MainContainer" sx={{ marginX: "1rem" }}>
+    <Box className="MainContainer" sx={{ marginX: { xs: "1rem", lg: "3rem" } }}>
       <Typography gutterBottom variant="h3">
         projects
       </Typography>
@@ -20,7 +20,7 @@ const Projects = () => {
         {myProjects.map((project) => {
           return (
             <Grid item xs={12} md={6}>
-              <ProjectsCard project={project} />{" "}
+              <ProjectsCard project={project} />
             </Grid>
           );
         })}
