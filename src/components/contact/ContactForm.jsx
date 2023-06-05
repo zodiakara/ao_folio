@@ -48,7 +48,16 @@ function ContactForm() {
           />
         </Stack>
         <Box sx={{ display: "flex", justifyContent: "flex-end" }}>
-          <Button type="submit" disabled={state.submitting}>
+          <Button
+            type="submit"
+            disabled={state.submitting}
+            variant="contained"
+            sx={{
+              backgroundColor: "#fa8e7f",
+              marginY: "0.5rem",
+              "&:hover": { backgroundColor: "#fd6651" },
+            }}
+          >
             Send
           </Button>
         </Box>
