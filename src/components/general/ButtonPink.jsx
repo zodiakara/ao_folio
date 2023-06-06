@@ -1,4 +1,6 @@
-function Button(text) {
+import { Button } from "@mui/material";
+
+const ButtonPink = (props) => {
   return (
     <Button
       variant="contained"
@@ -8,9 +10,9 @@ function Button(text) {
         "&:hover": { backgroundColor: "#fd6651" },
       }}
     >
-      {text}
+      {props.text}
     </Button>
   );
-}
+};
 
-export default Button;
+export default ButtonPink;
