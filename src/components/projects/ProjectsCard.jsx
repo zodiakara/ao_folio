@@ -20,9 +20,13 @@ const ProjectsCard = (props) => {
           component="img"
           height="100%"
           width="100%"
-          src="https://media.cnn.com/api/v1/images/stellar/prod/201026153717-cancun-mexico.jpg?q=x_2,y_215,h_1228,w_2182,c_crop/h_720,w_1280/f_webp"
+          src={props.project.image}
           alt={props.project.name}
-          // sx={{ "&:hover": { cursor: "pointer", opacity: "80%" } }}
+          sx={{
+            border: "solid 0.1px lightgrey",
+            borderRadius: "10px",
+            "&:hover": { cursor: "pointer", opacity: "80%" },
+          }}
         />
         <Box className="button-wrapper">
           {props.project.prodFE === "" ? (

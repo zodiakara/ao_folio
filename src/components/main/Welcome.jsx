@@ -1,4 +1,5 @@
 import { Box, Typography } from "@mui/material";
+import Button from "../general/Button";
 
 function WelcomePage() {
   return (
@@ -9,6 +10,7 @@ function WelcomePage() {
         Agata Ormińska{" "}
       </Typography>
       <Typography>a full stack developer</Typography>
+      <Button text="downloadCV" />
     </Box>
   );
 }
