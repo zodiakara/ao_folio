@@ -9,7 +9,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
-import AdbIcon from "@mui/icons-material/Adb";
+import ButtonPink from "./ButtonPink";
 
 const pages = ["Home", "About", "Projects", "Contact"];
 
@@ -107,6 +107,12 @@ const MyNavbar = () => {
                 {page}
               </Button>
             ))}
+          </Box>
+          <Box>
+            <a href="/ao_cv.pdf">
+              {" "}
+              <ButtonPink text="download CV" />
+            </a>
           </Box>
         </Toolbar>
       </Container>

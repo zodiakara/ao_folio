@@ -1,5 +1,4 @@
 import { Box, Typography } from "@mui/material";
-import ButtonPink from "../general/ButtonPink";
 
 function WelcomePage() {
   return (
@@ -10,10 +9,6 @@ function WelcomePage() {
         Agata Ormińska{" "}
       </Typography>
       <Typography>a full stack developer</Typography>
-      <a href="/ao_cv.pdf">
-        {" "}
-        <ButtonPink text="download CV" />
-      </a>
     </Box>
   );
 }
