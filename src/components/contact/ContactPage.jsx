@@ -13,9 +13,7 @@ function ContactPage() {
           {/* <br></br>You can use the contact form or write directly to my @ */}
         </Typography>
 
-        <Box>
-          <ContactForm />
-        </Box>
+        <Box>{/* <ContactForm /> */}</Box>
       </Box>
     </>
   );
