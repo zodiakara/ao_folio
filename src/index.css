@@ -46,3 +46,10 @@ a {
   -o-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
 }
+
+::selection {
+  background: #fa8e7f; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #fa8e7f; /* Gecko Browsers */
+}

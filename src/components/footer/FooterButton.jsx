@@ -5,7 +5,10 @@ function FooterButton({ address, icon }) {
     <Link href={address}>
       <IconButton
         size="large"
-        sx={{ color: ["#f5f5f5"], "&:hover": { opacity: 80 } }}
+        sx={{
+          color: "black",
+          "&:hover": { opacity: 80, backgroundColor: "#fa8e7f" },
+        }}
       >
         {icon}
       </IconButton>

@@ -10,7 +10,7 @@ const ProjectsCard = (props) => {
       <Card
         className="projectCardContainer"
         sx={{
-          border: "none",
+          border: "solid 0.1px lightgrey",
           boxShadow: "none",
           margin: "1rem",
         }}
@@ -23,8 +23,8 @@ const ProjectsCard = (props) => {
           src={props.project.image}
           alt={props.project.name}
           sx={{
-            border: "solid 0.1px lightgrey",
-            borderRadius: "10px",
+            // border: "solid 0.1px lightgrey",
+            // borderRadius: "10px",
             "&:hover": { cursor: "pointer", opacity: "80%" },
           }}
         />
@@ -46,13 +46,19 @@ const ProjectsCard = (props) => {
             address={props.project.repoFE ? props.project.repoFE : ""}
           />
         </Box>
-        <Typography
-          variant="h4"
-          sx={{ fontWeight: "bold", marginTop: "0.5rem" }}
-          p={0}
-        >
-          {props.project.name}
-        </Typography>
+        <Box sx={{ paddingX: "1rem", paddingY: "0.5rem" }}>
+          <Typography
+            variant="h4"
+            sx={{ fontWeight: "bold", marginTop: "0.25rem" }}
+            p={0}
+          >
+            {props.project.name}
+          </Typography>
+          <Typography variant="body2">
+            {props.project.stackFE}, {props.project.stackBE}
+          </Typography>
+          <Typography variant="body2"></Typography>
+        </Box>
       </Card>
     </Box>
   );

@@ -8,10 +8,10 @@ function ContactPage() {
         <Typography gutterBottom variant="h3">
           wanna collaborate?
         </Typography>
-        <Typography variant="body2">
+        {/* <Typography variant="body2">
           feel free to contact me!
-          {/* <br></br>You can use the contact form or write directly to my @ */}
-        </Typography>
+          <br></br>You can use the contact form or write directly to my @
+        </Typography> */}
 
         <Box>
           <ContactForm />

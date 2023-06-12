@@ -12,6 +12,7 @@ import MenuItem from "@mui/material/MenuItem";
 import ButtonPink from "./ButtonPink";
 import classes from "./MyNav.module.css";
 import { Link } from "@mui/material";
+import cv from "../../assets/ao_cv.pdf";
 
 const pages = ["home", "about", "projects", "contact"];
 
@@ -128,7 +129,7 @@ const MyNavbar = () => {
             ))}
           </Box>
           <Box>
-            <a href="/ao_cv.pdf">
+            <a href={cv}>
               {" "}
               <ButtonPink text="download CV" />
             </a>

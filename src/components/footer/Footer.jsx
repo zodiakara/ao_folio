@@ -11,12 +11,13 @@ const Footer = () => {
       maxWidth
       className="footer"
       sx={{
+        borderTop: "0.1px solid black",
         bottom: 0,
         py: 3,
         px: 2,
         mt: "auto",
-        backgroundColor: "black",
-        color: ["#f5f5f5"],
+        backgroundColor: "white",
+        color: "black",
       }}
     >
       <Box
