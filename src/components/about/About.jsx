@@ -4,7 +4,11 @@ import Circle from "./Circle.jsx";
 
 function About() {
   return (
-    <Box className="MainContainer">
+    <Box
+      className="MainContainer"
+      id="about"
+      sx={{ marginX: { xs: "2rem", md: "3rem", lg: "4rem" } }}
+    >
       <Grid container rowSpacing={{ md: 3 }}>
         <Grid item xs={12} md={6}>
           <Box
@@ -14,11 +18,11 @@ function About() {
               flexDirection: "column",
             }}
           >
-            <Typography gutterBottom sx={{ mx: "2rem" }} variant="h3">
+            <Typography gutterBottom variant="h3">
               {" "}
               about{" "}
             </Typography>
-            <Typography sx={{ textAlign: "justify", mx: "2rem" }}>
+            <Typography sx={{ textAlign: "justify" }}>
               Hi! I'm Agata. I’ve recently finished Epicode bootcamp and I
               proudly call myself a full-stack developer. My studies major was
               architecture and I’ve been working as an architect for 4 years
@@ -52,8 +56,11 @@ function About() {
               flexDirection: "column",
             }}
           >
-            <Typography variant="h3" sx={{ px: 1, textAlign: "center" }}>
-              Skills
+            <Typography
+              variant="h3"
+              sx={{ px: 1, textAlign: "center", marginY: "0.75rem" }}
+            >
+              skills
             </Typography>
 
             <Box
