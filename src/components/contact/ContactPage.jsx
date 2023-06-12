@@ -4,7 +4,7 @@ import ContactForm from "./ContactForm";
 function ContactPage() {
   return (
     <>
-      <Box className="MainContainer">
+      <Box className="MainContainer" id="contact">
         <Typography gutterBottom variant="h3">
           wanna collaborate?
         </Typography>

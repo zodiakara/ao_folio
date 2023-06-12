@@ -5,7 +5,11 @@ import ProjectsCard from "./ProjectsCard";
 
 const Projects = () => {
   return (
-    <Box className="MainContainer" sx={{ marginX: { xs: "1rem", lg: "3rem" } }}>
+    <Box
+      className="MainContainer"
+      id="projects"
+      sx={{ marginX: { xs: "1rem", md: "2.5rem", lg: "3rem" } }}
+    >
       <Typography gutterBottom variant="h3">
         projects
       </Typography>

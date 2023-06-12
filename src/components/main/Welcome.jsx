@@ -2,7 +2,7 @@ import { Box, Typography } from "@mui/material";
 
 function WelcomePage() {
   return (
-    <Box className="MainContainer">
+    <Box className="MainContainer" id="home">
       <Typography> Hello, I am </Typography>
       <Typography sx={{ marginY: "0.75rem" }} variant="h3">
         {" "}

@@ -9,8 +9,11 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
+import ButtonPink from "./ButtonPink";
+import classes from "./MyNav.module.css";
+import { Link } from "@mui/material";
 
-const pages = ["Home", "About", "Projects", "Contact"];
+const pages = ["home", "about", "projects", "contact"];
 
 const MyNavbar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -25,6 +28,7 @@ const MyNavbar = () => {
 
   return (
     <AppBar
+      className={classes.navbar}
       position="sticky"
       sx={{
         backgroundColor: "white",
@@ -38,7 +42,7 @@ const MyNavbar = () => {
             variant="h6"
             noWrap
             component="a"
-            href="#welcome"
+            href="#home"
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
@@ -64,6 +68,7 @@ const MyNavbar = () => {
             </IconButton>
             <Menu
               id="menu-appbar"
+              className={classes.smallToolbar}
               anchorEl={anchorElNav}
               anchorOrigin={{
                 vertical: "bottom",
@@ -83,7 +88,10 @@ const MyNavbar = () => {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                  <Link href={`${"#" + page}`}>
+                    {" "}
+                    <Typography textAlign="center">{page}</Typography>
+                  </Link>
                 </MenuItem>
               ))}
             </Menu>
@@ -98,14 +106,32 @@ const MyNavbar = () => {
           >
             {pages.map((page) => (
               <Button
+                disableRipple
+                disableFocusRipple
+                className={({ isActive }) =>
+                  isActive ? classes.active : undefined
+                }
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, mx: 5, color: "black", display: "block" }}
+                sx={{
+                  my: 2,
+                  mx: 5,
+                  color: "black",
+                  display: "block",
+                  backgroundColor: "transparent",
+                  "&:hover": { backgroundColor: "transparent" },
+                }}
                 href={`${"#" + page}`}
               >
                 {page}
               </Button>
             ))}
+          </Box>
+          <Box>
+            <a href="/ao_cv.pdf">
+              {" "}
+              <ButtonPink text="download CV" />
+            </a>
           </Box>
         </Toolbar>
       </Container>

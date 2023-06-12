@@ -1,5 +1,5 @@
 import "./App.css";
-import MyNavbar from "./components/MyNav";
+import MyNavbar from "./components/general/MyNav";
 import About from "./components/about/About";
 import ContactPage from "./components/contact/ContactPage";
 import Footer from "./components/footer/Footer";
