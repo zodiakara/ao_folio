@@ -33,7 +33,7 @@ export const myProjects = [
     stackFE: "React, Redux, Typescript, MUI, Bootstrap, Socket.io",
     stackBE: "NodeJs, Express, MongoDB, JWT, Socket.io",
     image: wa,
-    repoFE: "https://github.com/aygenyucel/whatsapp-clone-frontend",
+    repoFE: "https://github.com/zodiakara/whatsapp-clone-fe",
     repoBE: "",
     prodFE: "",
     prodBE: "",
