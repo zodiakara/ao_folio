@@ -54,10 +54,14 @@ const ProjectsCard = (props) => {
           >
             {props.project.name}
           </Typography>
-          <Typography variant="body2">
-            {props.project.stackFE}, {props.project.stackBE}
-          </Typography>
-          <Typography variant="body2"></Typography>
+          <Box sx={{ height: "3rem" }}>
+            {/* <Typography variant="body1">
+              {props.project.stackFE}, {props.project.stackBE}
+            </Typography> */}
+            <Typography variant="body2">
+              {props.project.description ? props.project.description : ""}
+            </Typography>
+          </Box>
         </Box>
       </Card>
     </Box>

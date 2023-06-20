@@ -1,6 +1,7 @@
 import li from "./LI_CLONE.JPG";
 import swapp from "./SWAPP.JPG";
 import wa from "./WA.JPG";
+import folio from "./FOLIO.jpg";
 
 export const myProjects = [
   {
@@ -10,8 +11,8 @@ export const myProjects = [
     stackBE: "NodeJs, Express, MongoDB, JWT, Socket.io",
     image: swapp,
     repoFE: "https://github.com/zodiakara/-capstone-project-FE",
-    repoBE: "",
-    prodFE: "",
+    repoBE: "https://github.com/zodiakara/capstone-project-BE",
+    prodFE: "https://swapp-app.netlify.app/",
     prodBE: "",
     description: "",
   },
@@ -22,8 +23,8 @@ export const myProjects = [
     stackBE: "NodeJs, Express, MongoDB, JWT",
     image: li,
     repoFE: "https://github.com/zodiakara/LINKEDIN-CLONE-FE",
-    repoBE: "",
-    prodFE: "",
+    repoBE: "https://github.com/zodiakara/BW4-LINKEDIN-CLONE-BE",
+    prodFE: "https://linkedin-clone-fe.netlify.app/",
     prodBE: "",
     description: "",
   },
@@ -34,7 +35,7 @@ export const myProjects = [
     stackBE: "NodeJs, Express, MongoDB, JWT, Socket.io",
     image: wa,
     repoFE: "https://github.com/zodiakara/whatsapp-clone-fe",
-    repoBE: "",
+    repoBE: "https://github.com/zodiakara/whatsapp-clone-be",
     prodFE: "",
     prodBE: "",
     description: "",
@@ -52,4 +53,16 @@ export const myProjects = [
   //   prodBE: "",
   //   description: "",
   // },
+  {
+    name: "My Portfolio Website",
+    scope: "Frontend",
+    stackFE: "React, MUI React, Redux, Typescript, MUI, Bootstrap, Socket.io",
+    stackBE: "",
+    image: folio,
+    repoFE: "https://github.com/zodiakara/ao_folio",
+    repoBE: "",
+    prodFE: "https://agata-orminska.netlify.app/",
+    prodBE: "",
+    description: "",
+  },
 ];
