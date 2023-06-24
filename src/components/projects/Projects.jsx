@@ -33,7 +33,7 @@ const Projects = () => {
       <Box sx={{ display: "flex", "justify-content": "center", marginY: 2 }}>
         <GitHubIcon />
 
-        <Typography className="projects-gh" sx={{ mx: 1, fontFamily: "Lato" }}>
+        <Typography className="projects-gh" sx={{ mx: 1 }}>
           <Link href="https://github.com/zodiakara" sx={{ color: "black" }}>
             check out my other works
           </Link>
