@@ -11,7 +11,7 @@ function ContactForm() {
   return (
     <>
       <form onSubmit={handleSubmit}>
-        <Stack direction={"column"} sx={{ minWidth: "350px" }}>
+        <Stack direction={"column"} sx={{ minWidth: "500px" }}>
           <TextField
             id="name"
             name="name"

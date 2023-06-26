@@ -38,7 +38,7 @@ const MyNavbar = () => {
       }}
     >
       <Container maxWidth="xl">
-        <Toolbar disableGutters>
+        <Toolbar disableGutters sx={{ paddingX: { xs: "1rem", lg: "2.5rem" } }}>
           <Typography
             variant="h6"
             noWrap
