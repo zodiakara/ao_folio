@@ -32,7 +32,7 @@ function ContactForm() {
           />
           <ValidationError prefix="Email" field="email" errors={state.errors} />
           <TextField
-            sx={{ marginTop: "2rem" }}
+            sx={{ marginTop: "2.5rem" }}
             id="message"
             name="message"
             placeholder="type your message here"
@@ -54,7 +54,7 @@ function ContactForm() {
             variant="contained"
             sx={{
               backgroundColor: "#fa8e7f",
-              marginY: "0.5rem",
+              marginY: "1rem",
               "&:hover": { backgroundColor: "#fd6651" },
             }}
           >
