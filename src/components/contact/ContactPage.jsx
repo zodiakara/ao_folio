@@ -15,9 +15,7 @@ function ContactPage() {
           use the contact form below
         </Typography>
 
-        <Box>
-          <ContactForm />
-        </Box>
+        <ContactForm />
       </Box>
     </>
   );
