@@ -13,11 +13,17 @@ import ButtonPink from "./ButtonPink";
 import classes from "./MyNav.module.css";
 import { Link } from "@mui/material";
 import cv from "../../assets/ao_cv.pdf";
-
-const pages = ["home", "about", "projects", "contact"];
+import { useTranslation } from "react-i18next";
 
 const MyNavbar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const { t } = useTranslation();
+  const pages = [
+    t("navbar-home"),
+    t("navbar-about"),
+    t("navbar-projects"),
+    t("navbar-contact"),
+  ];
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -43,7 +49,7 @@ const MyNavbar = () => {
             variant="h6"
             noWrap
             component="a"
-            href="#home"
+            href={t("navbar-home")}
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
@@ -88,7 +94,7 @@ const MyNavbar = () => {
               color="black"
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                <MenuItem key={page.indexOf()} onClick={handleCloseNavMenu}>
                   <Link href={`${"#" + page}`}>
                     {" "}
                     <Typography textAlign="center">{page}</Typography>
@@ -131,7 +137,7 @@ const MyNavbar = () => {
           <Box>
             <a href={cv}>
               {" "}
-              <ButtonPink text="download CV" />
+              <ButtonPink text={t("navbar-cv-download")} />
             </a>
           </Box>
         </Toolbar>

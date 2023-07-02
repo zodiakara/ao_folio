@@ -1,10 +1,12 @@
 import { Box, Typography } from "@mui/material";
 import ContactForm from "./ContactForm";
+import { useTranslation } from "react-i18next";
 
 function ContactPage() {
+  const { t } = useTranslation();
   return (
     <>
-      <Box className="MainContainer" id="contact">
+      <Box className="MainContainer" id={t("navbar-contact")}>
         <Typography gutterBottom variant="h3">
           contact
         </Typography>

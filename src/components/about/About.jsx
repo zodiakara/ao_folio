@@ -1,12 +1,14 @@
 import { Box, Grid, Typography } from "@mui/material";
 import { stack } from "../../assets/icons/myStack.js";
 import Circle from "./Circle.jsx";
+import { useTranslation } from "react-i18next";
 
 function About() {
+  const { t } = useTranslation();
   return (
     <Box
       className="MainContainer"
-      id="about"
+      id={t("navbar-about")}
       sx={{ marginX: { xs: "2rem", md: "3rem", lg: "4rem" } }}
     >
       <Grid container rowSpacing={{ md: 3 }}>

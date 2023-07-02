@@ -1,0 +1,9 @@
+{
+  "navbar-home": "home",
+  "navbar-about": "about",
+  "navbar-projects": "projects",
+  "navbar-contact": "contact",
+  "navbar-cv-download": "GET MY CV",
+  "welcomepage-hello": " Hello, I am ",
+  "welcomepage-title": "a full-stack developer"
+}
