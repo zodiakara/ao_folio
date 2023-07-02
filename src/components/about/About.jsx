@@ -21,24 +21,11 @@ function About() {
             }}
           >
             <Typography gutterBottom variant="h3">
-              {" "}
-              about{" "}
+              {t("aboutpage-title")}
             </Typography>
             <Typography sx={{ textAlign: "justify" }}>
-              Hi! I'm Agata. I’ve recently finished Epicode bootcamp and I
-              proudly call myself a full-stack developer. My studies major was
-              architecture and I’ve been working as an architect for 4 years
-              unitl I’ve decided to completely switch my career path. I’ve
-              always liked building things, getting to the core of problems and
-              solving it. I have strong analytical skills and I am friendly and
-              cooperative. My architectural background turned out to be a huge
-              help in coding, since I can easily organize my work, split
-              complicated tasks into small bites and I know how to meet a
-              deadline.<br></br> I am really fascinated by coding, AI and how
-              that’s gonna influence programming and our lives and I want to be
-              on the tech side of the fence. Click the button below to see my
-              tech stack and if You want to get in touch, I am always one
-              message away.
+              {t("aboutpage-description.part-one")}
+              <br></br> {t("aboutpage-description.part-two")}
             </Typography>
           </Box>
         </Grid>
@@ -62,7 +49,7 @@ function About() {
               variant="h3"
               sx={{ px: 1, textAlign: "center", marginY: "0.75rem" }}
             >
-              skills
+              {t("aboutpage-skills")}
             </Typography>
 
             <Box

@@ -13,7 +13,7 @@ const Projects = () => {
       sx={{ marginX: { xs: "1rem", md: "2.5rem", lg: "3rem" } }}
     >
       <Typography gutterBottom variant="h3">
-        projects
+        {t("projectpage-title")}
       </Typography>
       <Grid
         container
