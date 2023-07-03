@@ -37,7 +37,7 @@ const Projects = () => {
 
         <Typography className="projects-gh" sx={{ mx: 1 }}>
           <Link href="https://github.com/zodiakara" sx={{ color: "black" }}>
-            check out my other works
+            {t("projectspage-ghlink")}
           </Link>
         </Typography>
 
