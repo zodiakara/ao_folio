@@ -11,7 +11,7 @@ function ContactPage() {
           {t("contactpage-title")}
         </Typography>
         <Typography sx={{ maxWidth: "500px", textAlign: "center" }}>
-          {t("contactpage-subheader.part-one")}{" "}
+          {t("contactpage-subheader.part-one")}
           <span style={{ color: "#fa8e7f" }}>agata.orminska@gmail.com</span>
           {t("contactpage-subheader.part-two")}
         </Typography>

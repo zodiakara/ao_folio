@@ -3,6 +3,7 @@
   "navbar-about": "about",
   "navbar-projects": "projects",
   "navbar-contact": "contact",
+  "navbar-language": "PL",
   "navbar-cv-download": "GET MY CV",
   "welcomepage-hello": " Hello, I am ",
   "welcomepage-title": "a full-stack developer",
@@ -40,7 +41,7 @@
   "contactpage-form": {
     "form-callback": "Thank You for Your message!",
     "form-name": "name",
-    "form-message": "type your message here",
+    "form-message": "type your message here...",
     "form-send": "Send"
   }
 }

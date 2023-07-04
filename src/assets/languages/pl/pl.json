@@ -3,6 +3,7 @@
   "navbar-about": "o mnie",
   "navbar-projects": "projekty",
   "navbar-contact": "kontakt",
+  "navbar-language": "EN",
   "navbar-cv-download": "POBIERZ CV",
   "welcomepage-hello": "Cześć, nazywam się",
   "welcomepage-title": "full-stack developer",
@@ -34,13 +35,13 @@
   "projectspage-ghlink": "zobacz inne moje projekty",
   "contactpage-title": "kontakt",
   "contactpage-subheader": {
-    "part-one": "masz pytanie lub chcesz nawiązać współpracę? napisz do mnie bezpośrednio: ",
+    "part-one": "masz pytanie? chcesz nawiązać współpracę? napisz do mnie bezpośrednio na: ",
     "part-two": " lub zostaw wiadomość w formularzu poniżej"
   },
   "contactpage-form": {
     "form-callback": "Dziękuję za wiadomość!",
     "form-name": "imię",
-    "form-message": "napisz swoją wiadomość tutaj",
+    "form-message": "napisz swoją wiadomość tutaj...",
     "form-send": "Wyślij"
   }
 }

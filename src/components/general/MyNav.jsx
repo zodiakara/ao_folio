@@ -14,6 +14,7 @@ import classes from "./MyNav.module.css";
 import { Link } from "@mui/material";
 import cv from "../../assets/ao_cv.pdf";
 import { useTranslation } from "react-i18next";
+import TranslateButton from "./TranslateButton";
 
 const MyNavbar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -45,22 +46,23 @@ const MyNavbar = () => {
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters sx={{ paddingX: { xs: "1rem", lg: "2.5rem" } }}>
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href={t("navbar-home")}
-            sx={{
-              mr: 2,
-              display: { xs: "none", md: "flex" },
-              fontFamily: "Lato",
-              fontWeight: 700,
-              color: "black",
-              textDecoration: "none",
-            }}
-          >
-            AO
-          </Typography>
+          <Link href={"#" + t("navbar-home")}>
+            {" "}
+            <Typography
+              variant="h6"
+              noWrap
+              sx={{
+                mr: 2,
+                display: { xs: "none", md: "flex" },
+                fontFamily: "Lato",
+                fontWeight: 700,
+                color: "black",
+                textDecoration: "none",
+              }}
+            >
+              AO
+            </Typography>
+          </Link>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
@@ -113,8 +115,8 @@ const MyNavbar = () => {
           >
             {pages.map((page) => (
               <Button
-                disableRipple
                 disableFocusRipple
+                disableRipple
                 className={({ isActive }) =>
                   isActive ? classes.active : undefined
                 }
@@ -135,6 +137,7 @@ const MyNavbar = () => {
             ))}
           </Box>
           <Box>
+            <TranslateButton />
             <a href={cv}>
               {" "}
               <ButtonPink text={t("navbar-cv-download")} />
