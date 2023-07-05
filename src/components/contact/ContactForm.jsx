@@ -2,12 +2,12 @@ import { Box, Button, Stack, TextField } from "@mui/material";
 import { useForm, ValidationError } from "@formspree/react";
 import { useTranslation } from "react-i18next";
 
-function ContactForm() {
+function ContactForm(props) {
   const [state, handleSubmit] = useForm(process.env.REACT_APP_FORM_KEY);
   const { t } = useTranslation();
 
   if (state.succeeded) {
-    return <p>Thank You for Your message!</p>;
+    return <p>{t("contactpage-form.form-callback")}</p>;
   }
 
   return (
@@ -60,6 +60,7 @@ function ContactForm() {
           <Box sx={{ display: "flex", justifyContent: "flex-end" }}>
             <Button
               type="submit"
+              onClick={props.hideText}
               disabled={state.submitting}
               variant="contained"
               sx={{

@@ -15,9 +15,3 @@
   height: 60px;
   object-fit: fill;
 }
-.skill-text {
-  position: absolute;
-  left: 50px;
-  top: 75px;
-  color: white;
-}

@@ -9,27 +9,29 @@
   "welcomepage-title": "a full-stack developer",
   "aboutpage-title": "about",
   "aboutpage-description": {
-    "part-one": "Hi! I'm Agata. I've recently finished Epicode bootcamp and I proudly call myself a full-stack developer. My studies major was architecture and I've been working as an architect for 4 years until I've decided to completely switch my career path. I've always liked building things, getting to the core of problems and solving it. I have strong analytical skills and I am friendly and cooperative. My architectural background turned out to be a huge help in coding, since I can easily organize my work, split complicated tasks into small bites and I know how to meet a deadline.",
+    "part-one": "Hi! I'm Agata. I've recently finished 6month coding bootcamp and I can proudly call myself a junior full-stack developer. My studies major was architecture and I've been working as an architect for 4 years until I've decided to completely switch my career path. I've always liked building things, getting to the core of problems and solving it. I have strong analytical skills and I am friendly and cooperative. My architectural background turned out to be a huge help in coding, since I can easily organize my work, split complicated tasks into small bites and I know how to meet a deadline.",
     "part-two": "I am really fascinated by coding, AI and how that's gonna influence programming and our lives and I want to be on the tech side of the fence. Click the button below to see my tech stack and if You want to get in touch, I am always one message away."
   },
+  "aboutpage-circle-part-one": "toggle to see",
+  "aboutpage-circle-part-two": " my stack",
   "aboutpage-skills": "skills",
   "projectpage-title": "projects",
   "projectspage-projects": {
     "project-one": {
       "name": "swAPP",
-      "description": "asdf"
+      "description": "Fullstack app created as my bootcamp graduation project. Registered users can put stuff they don't need and swap it with others. All for sustainability! Frontend is build with React/Redux and MUI. Backend is using Node.js/Express with MongoDB, authentication via bcrypt + JWT and socket.io for messaging between users."
     },
     "project-two": {
       "name": "LinkedIn Clone",
-      "description": "write des"
+      "description": "Fullstack application developed as a bootcamp project. Frontend build with React/Redux and Bootstrap. Backend is using Node.js/Express, MongoDB. Later I've added authentication with bcrypt + JWT and cloudinary for picture upload."
     },
     "project-three": {
       "name": "Whatsapp Clone",
-      "description": ""
+      "description": "Fullstack application developed in a team of 3 as a bootcamp project. Build with Typescript, React/Redux, Mui/Bootstrap and socket.io-client on Frontend side. Backend used Node.js+Express, MongoDB, bcrypt + JWT, socket.io, Oauth+google."
     },
     "project-four": {
       "name": "My Portfolio Website",
-      "description": ""
+      "description": "Frontend webpage I've designed and developed to present some of my works. Created in React with MUI. Translation is provided through i18next library."
     }
   },
   "projectspage-ghlink": "check out my other works",

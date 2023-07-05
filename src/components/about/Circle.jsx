@@ -2,8 +2,10 @@ import { Typography } from "@mui/material";
 import { stack } from "../../assets/icons/myStack.js";
 import "./Circle.css";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const Circle = () => {
+  const { t } = useTranslation();
   const [toggle, setToggle] = useState(false);
   const radius = 250; // Radius of the circle
   const angle = (2 * Math.PI) / stack.length; // Angle between each image
@@ -16,10 +18,16 @@ const Circle = () => {
       }}
     >
       <Typography
-        className="skill-text"
-        sx={{ textAlign: "center", fontWeight: "bold" }}
+        sx={{
+          textAlign: "center",
+          fontWeight: "bold",
+          color: "white",
+          marginTop: "75px",
+        }}
       >
-        toggle to see <br></br>my skills stack
+        {t("aboutpage-circle-part-one")}
+        <br></br>
+        {t("aboutpage-circle-part-two")}
       </Typography>
 
       {toggle &&

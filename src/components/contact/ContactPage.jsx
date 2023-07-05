@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 
 function ContactPage() {
   const { t } = useTranslation();
+  const hideText = () => {};
   return (
     <>
       <Box className="MainContainer" id={t("navbar-contact")}>
@@ -16,7 +17,7 @@ function ContactPage() {
           {t("contactpage-subheader.part-two")}
         </Typography>
 
-        <ContactForm />
+        <ContactForm hideText={hideText} />
       </Box>
     </>
   );
