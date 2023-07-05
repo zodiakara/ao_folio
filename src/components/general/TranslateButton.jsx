@@ -1,7 +1,6 @@
 import { useTranslation } from "react-i18next";
 import i18n, { changeLanguage } from "i18next";
 import { Button } from "@mui/material";
-import { useState } from "react";
 
 const TranslateButton = () => {
   console.log(i18n.languages);
@@ -12,12 +11,15 @@ const TranslateButton = () => {
   const handleLanguageChange = () => {
     const currentLanguage = i18n.language;
     if (currentLanguage === "pl") {
-      i18n.changeLanguage("en");
+      i18n.changeLanguage("en").then(() => {
+        window.location.reload();
+      });
     } else {
-      changeLanguage("pl");
+      changeLanguage("pl").then(() => {
+        window.location.reload();
+      });
     }
   };
-
   return (
     <Button
       onClick={() => {

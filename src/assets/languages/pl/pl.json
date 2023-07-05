@@ -17,22 +17,14 @@
   "aboutpage-skills": "mój stack",
   "projectpage-title": "projekty",
   "projectspage-projects": {
-    "project-one": {
-      "name": "swAPP",
-      "description": "asdf"
-    },
-    "project-two": {
-      "name": "LinkedIn Clone",
-      "description": "write des"
-    },
-    "project-three": {
-      "name": "Whatsapp Clone",
-      "description": ""
-    },
-    "project-four": {
-      "name": "Moje Portfolio",
-      "description": "Frontend webpage created and designed by myself in React. Text translation is provided through i18next library."
-    }
+    "project-one-name": "swAPP",
+    "project-one-description": "",
+    "project-two-name": "LinkedIn Clone",
+    "project-two-description": "",
+    "project-three-name": "Whatsapp Clone",
+    "project-three-description": "",
+    "project-four-name": "My Portfolio Website",
+    "project-four-description": ""
   },
   "projectspage-ghlink": "zobacz inne moje projekty",
   "contactpage-title": "kontakt",

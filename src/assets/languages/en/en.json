@@ -17,27 +17,19 @@
   "aboutpage-skills": "skills",
   "projectpage-title": "projects",
   "projectspage-projects": {
-    "project-one": {
-      "name": "swAPP",
-      "description": "Fullstack app created as my bootcamp graduation project. Registered users can put stuff they don't need and swap it with others. All for sustainability! Frontend is build with React/Redux and MUI. Backend is using Node.js/Express with MongoDB, authentication via bcrypt + JWT and socket.io for messaging between users."
-    },
-    "project-two": {
-      "name": "LinkedIn Clone",
-      "description": "Fullstack application developed as a bootcamp project. Frontend build with React/Redux and Bootstrap. Backend is using Node.js/Express, MongoDB. Later I've added authentication with bcrypt + JWT and cloudinary for picture upload."
-    },
-    "project-three": {
-      "name": "Whatsapp Clone",
-      "description": "Fullstack application developed in a team of 3 as a bootcamp project. Build with Typescript, React/Redux, Mui/Bootstrap and socket.io-client on Frontend side. Backend used Node.js+Express, MongoDB, bcrypt + JWT, socket.io, Oauth+google."
-    },
-    "project-four": {
-      "name": "My Portfolio Website",
-      "description": "Frontend webpage I've designed and developed to present some of my works. Created in React with MUI. Translation is provided through i18next library."
-    }
+    "project-one-name": "swAPP",
+    "project-one-description": "Fullstack app created as my bootcamp graduation project. Registered users can put stuff they don't need and swap it with others. All for sustainability! Frontend is build with React/Redux and MUI. Backend is using Node.js/Express with MongoDB, authentication via bcrypt + JWT and socket.io for messaging between users.",
+    "project-two-name": "LinkedIn Clone",
+    "project-two-description": "Fullstack application developed as a bootcamp project. Frontend build with React/Redux and Bootstrap. Backend is using Node.js/Express, MongoDB. Later I've added authentication with bcrypt + JWT and cloudinary for picture upload.",
+    "project-three-name": "Whatsapp Clone",
+    "project-three-description": "Fullstack application developed in a team of 3 as a bootcamp project. Build with Typescript, React/Redux, Mui/Bootstrap and socket.io-client on Frontend side. Backend used Node.js+Express, MongoDB, bcrypt + JWT, socket.io, Oauth+google.",
+    "project-four-name": "My Portfolio Website",
+    "project-four-description": "Frontend webpage I've designed and developed to present some of my works. Created in React with MUI. Translation is provided through i18next library."
   },
   "projectspage-ghlink": "check out my other works",
   "contactpage-title": "contact",
   "contactpage-subheader": {
-    "part-one": "have a question or want to work together? feel free to write to me directly on",
+    "part-one": "have a question or want to work together? feel free to write to me directly on ",
     "part-two": " or use the contact form below"
   },
   "contactpage-form": {

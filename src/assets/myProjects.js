@@ -6,7 +6,7 @@ import { t } from "i18next";
 
 export const myProjects = [
   {
-    name: t("projectspage-projects.project-one.name"),
+    name: t("projectspage-projects.project-one-name"),
     scope: "Frontend and Backend",
     stackFE: "React, Redux, MUI, Socket.io",
     stackBE: "NodeJs, Express, MongoDB, JWT, Socket.io",
@@ -15,10 +15,10 @@ export const myProjects = [
     repoBE: "https://github.com/zodiakara/capstone-project-BE",
     prodFE: "https://swapp-app.netlify.app/",
     prodBE: "",
-    description: t("projectspage-projects.project-one.description"),
+    description: t("projectspage-projects.project-one-description"),
   },
   {
-    name: t("projectspage-projects.project-two.name"),
+    name: t("projectspage-projects.project-two-name"),
     scope: "Frontend and Backend",
     stackFE: "React, Redux, Bootstrap",
     stackBE: "NodeJs, Express, MongoDB, JWT",
@@ -27,10 +27,10 @@ export const myProjects = [
     repoBE: "https://github.com/zodiakara/BW4-LINKEDIN-CLONE-BE",
     prodFE: "https://linkedin-clone-fe.netlify.app/",
     prodBE: "",
-    description: t("projectspage-projects.project-two.description"),
+    description: t("projectspage-projects.project-two-description"),
   },
   {
-    name: t("projectspage-projects.project-three.name"),
+    name: t("projectspage-projects.project-three-name"),
     scope: "Frontend and Backend",
     stackFE: "React, Redux, Typescript, MUI, Bootstrap, Socket.io",
     stackBE: "NodeJs, Express, MongoDB, JWT, Socket.io",
@@ -39,7 +39,7 @@ export const myProjects = [
     repoBE: "https://github.com/zodiakara/whatsapp-clone-be",
     prodFE: "",
     prodBE: "",
-    description: t("projectspage-projects.project-three.description"),
+    description: t("projectspage-projects.project-three-description"),
   },
   // {
   //   name: "Calculator",
@@ -55,7 +55,7 @@ export const myProjects = [
   //   description: "",
   // },
   {
-    name: t("projectspage-projects.project-four.name"),
+    name: t("projectspage-projects.project-four-name"),
     scope: "Frontend",
     stackFE: "React, MUI React, Redux, Typescript, MUI, Bootstrap, Socket.io",
     stackBE: "",
@@ -64,6 +64,6 @@ export const myProjects = [
     repoBE: "",
     prodFE: "https://agata-orminska.netlify.app/",
     prodBE: "",
-    description: t("projectspage-projects.project-four.description"),
+    description: t("projectspage-projects.project-four-description"),
   },
 ];
