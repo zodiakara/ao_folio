@@ -8,8 +8,6 @@ const TranslateButton = () => {
   console.log(i18n.languages);
   console.log(i18n);
 
-  const { t } = useTranslation();
-
   const handleLanguageChange = () => {
     const currentLanguage = i18n.language;
     if (currentLanguage === "pl") {
