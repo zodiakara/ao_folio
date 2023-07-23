@@ -1,4 +1,3 @@
-import { useTranslation } from "react-i18next";
 import i18n, { changeLanguage } from "i18next";
 import pl from "../../assets/icons-language/pl.png";
 import en from "../../assets/icons-language/gb.png";
