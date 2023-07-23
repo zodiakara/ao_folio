@@ -1,6 +1,8 @@
 import { useTranslation } from "react-i18next";
 import i18n, { changeLanguage } from "i18next";
-import { Button } from "@mui/material";
+import pl from "../../assets/icons-language/pl.png";
+import en from "../../assets/icons-language/gb.png";
+import { IconButton } from "@mui/material";
 
 const TranslateButton = () => {
   console.log(i18n.languages);
@@ -21,13 +23,18 @@ const TranslateButton = () => {
     }
   };
   return (
-    <Button
+    <IconButton
+      sx={{ height: "35px", width: "35px", p: "0.5rem", m: "0.5rem" }}
       onClick={() => {
         handleLanguageChange();
       }}
     >
-      {t("navbar-language")}
-    </Button>
+      <img
+        className="language-img"
+        src={i18n.language === "en" ? pl : en}
+        alt="current-language"
+      />
+    </IconButton>
   );
 };
 

@@ -46,7 +46,14 @@ const ProjectsCard = (props) => {
             address={props.project.repoFE ? props.project.repoFE : ""}
           />
         </Box>
-        <Box sx={{ paddingX: "1rem", paddingY: "0.5rem" }}>
+        <Box
+          sx={{
+            paddingX: "1rem",
+            paddingY: "0.5rem",
+            overflow: "auto",
+            textOverflow: "ellipsis",
+          }}
+        >
           <Typography
             variant="h4"
             sx={{ fontWeight: "bold", marginTop: "0.25rem" }}

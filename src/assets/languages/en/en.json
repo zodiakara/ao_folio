@@ -18,7 +18,7 @@
   "projectpage-title": "projects",
   "projectspage-projects": {
     "project-one-name": "swAPP",
-    "project-one-description": "Fullstack app created as my bootcamp graduation project. Registered users can put stuff they don't need and swap it with others. All for sustainability! Frontend is build with React/Redux and MUI. Backend is using Node.js/Express with MongoDB, authentication via bcrypt + JWT and socket.io for messaging between users.",
+    "project-one-description": "Fullstack app created as my bootcamp graduation project. Registered users can put stuff they don't need and swap it with others. All for circular economy! Frontend is build with React/Redux and MUI. Backend is using Node.js/Express with MongoDB, authentication via bcrypt + JWT and socket.io for messaging between users.",
     "project-two-name": "LinkedIn Clone",
     "project-two-description": "Fullstack application developed as a bootcamp project. Frontend build with React/Redux and Bootstrap. Backend is using Node.js/Express, MongoDB. Later I've added authentication with bcrypt + JWT and cloudinary for picture upload.",
     "project-three-name": "Whatsapp Clone",

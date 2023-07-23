@@ -53,3 +53,8 @@ a {
 ::-moz-selection {
   background: #fa8e7f; /* Gecko Browsers */
 }
+
+.language-img {
+  height: auto;
+  width: 25px;
+}

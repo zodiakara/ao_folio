@@ -136,7 +136,12 @@ const MyNavbar = () => {
               </Button>
             ))}
           </Box>
-          <Box>
+          <Box
+            sx={{
+              display: "flex",
+              alignItems: "center",
+            }}
+          >
             <TranslateButton />
             <a href={cv}>
               {" "}
