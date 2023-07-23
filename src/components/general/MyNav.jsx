@@ -13,11 +13,18 @@ import ButtonPink from "./ButtonPink";
 import classes from "./MyNav.module.css";
 import { Link } from "@mui/material";
 import cv from "../../assets/ao_cv.pdf";
-
-const pages = ["home", "about", "projects", "contact"];
+import { useTranslation } from "react-i18next";
+import TranslateButton from "./TranslateButton";
 
 const MyNavbar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const { t } = useTranslation();
+  const pages = [
+    t("navbar-home"),
+    t("navbar-about"),
+    t("navbar-projects"),
+    t("navbar-contact"),
+  ];
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -39,22 +46,23 @@ const MyNavbar = () => {
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters sx={{ paddingX: { xs: "1rem", lg: "2.5rem" } }}>
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="#home"
-            sx={{
-              mr: 2,
-              display: { xs: "none", md: "flex" },
-              fontFamily: "Lato",
-              fontWeight: 700,
-              color: "black",
-              textDecoration: "none",
-            }}
-          >
-            AO
-          </Typography>
+          <Link href={"#" + t("navbar-home")}>
+            {" "}
+            <Typography
+              variant="h6"
+              noWrap
+              sx={{
+                mr: 2,
+                display: { xs: "none", md: "flex" },
+                fontFamily: "Lato",
+                fontWeight: 700,
+                color: "black",
+                textDecoration: "none",
+              }}
+            >
+              AO
+            </Typography>
+          </Link>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
@@ -88,7 +96,7 @@ const MyNavbar = () => {
               color="black"
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                <MenuItem key={page.indexOf()} onClick={handleCloseNavMenu}>
                   <Link href={`${"#" + page}`}>
                     {" "}
                     <Typography textAlign="center">{page}</Typography>
@@ -107,8 +115,8 @@ const MyNavbar = () => {
           >
             {pages.map((page) => (
               <Button
-                disableRipple
                 disableFocusRipple
+                disableRipple
                 className={({ isActive }) =>
                   isActive ? classes.active : undefined
                 }
@@ -128,10 +136,16 @@ const MyNavbar = () => {
               </Button>
             ))}
           </Box>
-          <Box>
+          <Box
+            sx={{
+              display: "flex",
+              alignItems: "center",
+            }}
+          >
+            <TranslateButton />
             <a href={cv}>
               {" "}
-              <ButtonPink text="download CV" />
+              <ButtonPink text={t("navbar-cv-download")} />
             </a>
           </Box>
         </Toolbar>

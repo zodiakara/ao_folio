@@ -46,7 +46,14 @@ const ProjectsCard = (props) => {
             address={props.project.repoFE ? props.project.repoFE : ""}
           />
         </Box>
-        <Box sx={{ paddingX: "1rem", paddingY: "0.5rem" }}>
+        <Box
+          sx={{
+            paddingX: "1rem",
+            paddingY: "0.5rem",
+            overflow: "auto",
+            textOverflow: "ellipsis",
+          }}
+        >
           <Typography
             variant="h4"
             sx={{ fontWeight: "bold", marginTop: "0.25rem" }}
@@ -54,11 +61,11 @@ const ProjectsCard = (props) => {
           >
             {props.project.name}
           </Typography>
-          <Box sx={{ height: "3rem" }}>
+          <Box sx={{ height: "5rem", marginBottom: "1rem" }}>
             {/* <Typography variant="body1">
               {props.project.stackFE}, {props.project.stackBE}
             </Typography> */}
-            <Typography variant="body2">
+            <Typography>
               {props.project.description ? props.project.description : ""}
             </Typography>
           </Box>

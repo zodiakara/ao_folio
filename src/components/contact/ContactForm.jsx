@@ -1,11 +1,13 @@
-import { Box, Button, Grid, Stack, TextField } from "@mui/material";
+import { Box, Button, Stack, TextField } from "@mui/material";
 import { useForm, ValidationError } from "@formspree/react";
+import { useTranslation } from "react-i18next";
 
-function ContactForm() {
+function ContactForm(props) {
   const [state, handleSubmit] = useForm(process.env.REACT_APP_FORM_KEY);
+  const { t } = useTranslation();
 
   if (state.succeeded) {
-    return <p>Thank You for Your message!</p>;
+    return <p>{t("contactpage-form.form-callback")}</p>;
   }
 
   return (
@@ -20,7 +22,7 @@ function ContactForm() {
               fullWidth
               id="name"
               name="name"
-              label="Name"
+              label={t("contactpage-form.form-name")}
               required
               variant="standard"
             />
@@ -28,7 +30,7 @@ function ContactForm() {
             <TextField
               id="email"
               name="email"
-              label="Email"
+              label="email"
               type="email"
               fullWidth
               required
@@ -43,7 +45,7 @@ function ContactForm() {
               sx={{ marginTop: "2.5rem" }}
               id="message"
               name="message"
-              placeholder="type your message here"
+              placeholder={t("contactpage-form.form-message")}
               multiline
               rows={5}
               fullWidth
@@ -58,6 +60,7 @@ function ContactForm() {
           <Box sx={{ display: "flex", justifyContent: "flex-end" }}>
             <Button
               type="submit"
+              onClick={props.hideText}
               disabled={state.submitting}
               variant="contained"
               sx={{
@@ -66,7 +69,7 @@ function ContactForm() {
                 "&:hover": { backgroundColor: "#fd6651" },
               }}
             >
-              Send
+              {t("contactpage-form.form-send")}
             </Button>
           </Box>
         </form>

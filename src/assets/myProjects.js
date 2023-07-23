@@ -2,10 +2,11 @@ import li from "./LI_CLONE.JPG";
 import swapp from "./SWAPP.JPG";
 import wa from "./WA.JPG";
 import folio from "./FOLIO.jpg";
+import { t } from "i18next";
 
 export const myProjects = [
   {
-    name: "swAPP",
+    name: t("projectspage-projects.project-one-name"),
     scope: "Frontend and Backend",
     stackFE: "React, Redux, MUI, Socket.io",
     stackBE: "NodeJs, Express, MongoDB, JWT, Socket.io",
@@ -14,10 +15,10 @@ export const myProjects = [
     repoBE: "https://github.com/zodiakara/capstone-project-BE",
     prodFE: "https://swapp-app.netlify.app/",
     prodBE: "",
-    description: "",
+    description: t("projectspage-projects.project-one-description"),
   },
   {
-    name: "LinkedIn Clone",
+    name: t("projectspage-projects.project-two-name"),
     scope: "Frontend and Backend",
     stackFE: "React, Redux, Bootstrap",
     stackBE: "NodeJs, Express, MongoDB, JWT",
@@ -26,10 +27,10 @@ export const myProjects = [
     repoBE: "https://github.com/zodiakara/BW4-LINKEDIN-CLONE-BE",
     prodFE: "https://linkedin-clone-fe.netlify.app/",
     prodBE: "",
-    description: "",
+    description: t("projectspage-projects.project-two-description"),
   },
   {
-    name: "Whatsapp Clone",
+    name: t("projectspage-projects.project-three-name"),
     scope: "Frontend and Backend",
     stackFE: "React, Redux, Typescript, MUI, Bootstrap, Socket.io",
     stackBE: "NodeJs, Express, MongoDB, JWT, Socket.io",
@@ -38,7 +39,7 @@ export const myProjects = [
     repoBE: "https://github.com/zodiakara/whatsapp-clone-be",
     prodFE: "",
     prodBE: "",
-    description: "",
+    description: t("projectspage-projects.project-three-description"),
   },
   // {
   //   name: "Calculator",
@@ -54,7 +55,7 @@ export const myProjects = [
   //   description: "",
   // },
   {
-    name: "My Portfolio Website",
+    name: t("projectspage-projects.project-four-name"),
     scope: "Frontend",
     stackFE: "React, MUI React, Redux, Typescript, MUI, Bootstrap, Socket.io",
     stackBE: "",
@@ -63,6 +64,6 @@ export const myProjects = [
     repoBE: "",
     prodFE: "https://agata-orminska.netlify.app/",
     prodBE: "",
-    description: "",
+    description: t("projectspage-projects.project-four-description"),
   },
 ];

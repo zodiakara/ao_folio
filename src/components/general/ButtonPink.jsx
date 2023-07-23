@@ -6,6 +6,7 @@ const ButtonPink = (props) => {
       variant="contained"
       sx={{
         backgroundColor: "#fa8e7f",
+        width: "120px",
         marginY: "0.5rem",
         "&:hover": { backgroundColor: "#fd6651" },
       }}
